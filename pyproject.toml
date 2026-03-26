@@ -1,0 +1,21 @@
+[project]
+name = "nmb-predictor"
+version = "0.1.0"
+description = "NMB Predictor Scaffold"
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn[standard]",
+    "numpy",
+    "scipy",
+    "anthropic>=0.25",
+    "pydantic>=2.0",
+    "python-dotenv",
+    "httpx"
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio"
+]
