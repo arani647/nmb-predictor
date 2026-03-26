@@ -1,9 +1,11 @@
-export enum CasePhase {
-    INDUCTION = "INDUCTION",
-    MAINTENANCE = "MAINTENANCE",
-    CLOSING = "CLOSING",
-    EXTUBATED = "EXTUBATED"
-}
+export const CasePhase = {
+    INDUCTION: "INDUCTION",
+    MAINTENANCE: "MAINTENANCE",
+    CLOSING: "CLOSING",
+    EXTUBATED: "EXTUBATED"
+} as const;
+
+export type CasePhase = typeof CasePhase[keyof typeof CasePhase];
 
 export interface Patient {
     id: string;

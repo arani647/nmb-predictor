@@ -33,7 +33,7 @@ export const PatientModal: React.FC<Props> = ({ caseState, onClose, onAcknowledg
         }],
     };
 
-    const chartOptions = {
+    const chartOptions: any = {
         responsive: true,
         interaction: { intersect: false, mode: 'index' as const },
         plugins: { legend: { display: false }, title: { display: false } },
